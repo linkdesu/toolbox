@@ -10,7 +10,8 @@
     "build:lib": "webpack --mode=production --config lib/build/dist.config.js",
     "build:vue": "vue-tsc --noEmit && vite build",
     "build": "run-s build:lib build:vue",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "netlify deploy -p"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^1.1.4",
